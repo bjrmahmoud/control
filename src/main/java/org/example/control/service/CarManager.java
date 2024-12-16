@@ -18,7 +18,7 @@ public class CarManager implements CarService{
     @Autowired
    CarRepositorie carRepositorie;
     @Override
-    public CarDto saveComputer(CarDto carDto) {
+    public CarDto saveCar(CarDto carDto) {
         Car car = CarMapper.toCar(carDto);
         car = CarRepositorie.save(car);
         return CarMapper.toCarDto(car);

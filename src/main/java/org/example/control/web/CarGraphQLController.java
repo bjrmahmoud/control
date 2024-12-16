@@ -22,7 +22,7 @@ public class CarGraphQLController{
 
     @MutationMapping
     public CarDto saveCar(@Argument CarDto car) {
-        return carServicea.saveCar(car);
+        return carService.saveCar(car);
     }
 
 }

@@ -5,10 +5,13 @@ import org.example.control.dto.CarDto;
 import java.util.List;
 
 public interface CarService {
-    public CarDto saveComputer(CarDto carDTO);
+    public CarDto saveCar(CarDto carDto);
+
+    CarDto saveCar(CarDto carDto);
 
     public List<CarDto> getCarByModel(String model);
     public CarDto getCarById(int id);
+
 
 
 }
